@@ -1,1 +1,96 @@
-# ankit-portfolio
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ankit Ramola | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      plugins: [tailwindcss],
+      theme: {
+        extend: {
+          animation: {
+            fade: 'fadeIn 2s ease-in-out',
+            zoom: 'zoomIn 1s ease',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            zoomIn: {
+              '0%': { transform: 'scale(0.8)', opacity: '0' },
+              '100%': { transform: 'scale(1)', opacity: '1' },
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.6/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-base-200 text-base-content">
+  <header class="bg-primary text-primary-content text-center py-10 animate-fade">
+    <h1 class="text-5xl font-bold">Ankit Ramola</h1>
+    <p class="text-xl mt-2">Aspiring Software Developer | BCA Student | Backend & Frontend Enthusiast</p>
+  </header>
+
+  <main class="max-w-5xl mx-auto p-6 space-y-16">
+    <section class="animate-fade">
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <p class="text-lg">
+        I’m a passionate BCA student at <strong>Swami Rama Himalayan University</strong>,
+        driven by curiosity and a strong interest in building real-world applications.
+        I specialize in both frontend and backend development, with a keen interest
+        in solving problems through clean, efficient code.
+      </p>
+    </section>
+
+    <section class="animate-fade">
+      <h2 class="text-3xl font-bold mb-4">Skills</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Languages:</strong> Python, C++</li>
+        <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+        <li><strong>Backend:</strong> Django (REST APIs, MVC architecture, Admin Panel)</li>
+        <li><strong>Tools:</strong> Git, VS Code</li>
+      </ul>
+    </section>
+
+    <section class="animate-fade">
+      <h2 class="text-3xl font-bold mb-4">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="card bg-base-100 shadow-xl border-l-4 border-primary animate-zoom">
+          <div class="card-body">
+            <h3 class="card-title">Personal Blog</h3>
+            <p>Developed a full-stack blog using Django with user authentication, post creation, and comments.</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl border-l-4 border-primary animate-zoom">
+          <div class="card-body">
+            <h3 class="card-title">Portfolio Website</h3>
+            <p>This dynamic portfolio built using HTML, CSS, and JavaScript.</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl border-l-4 border-primary animate-zoom">
+          <div class="card-body">
+            <h3 class="card-title">To-Do List App</h3>
+            <p>A JavaScript-powered task manager with local storage and responsive design.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="animate-fade">
+      <h2 class="text-3xl font-bold mb-4">Contact</h2>
+      <p><strong>Email:</strong> <a href="https:/www.gmail.com" class="link link-primary" target="_blank">ankitramola1103@gmail.com</a></p>
+      <p><strong>GitHub:</strong> github.com/ankitramola</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ankit-ramola-5621b12b3" class="link link-primary" target="_blank">www.linkedin.com/in/ankit-ramola-5621b12b3</a></p>
+    </section>
+  </main>
+
+  <footer class="bg-primary text-primary-content text-center py-6 animate-fade">
+    <p>&copy; 2025 Ankit Ramola. All rights reserved.</p>
+  </footer>
+</body>
+</html>
